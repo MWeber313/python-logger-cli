@@ -1,3 +1,5 @@
+numofUsers = 0
+userDatabase = {}
 print(
     '''
     Name and Password Parameters are as follows:
@@ -10,7 +12,10 @@ print(
 name = input('Please write your name: ')
 password = input('Please write your password: ')
 
-numofUsers = 0
-userDatabase = {}
+numofUsers += 1
 
 userDatabase.update({name:password})
+
+for i in userDatabase:
+    print(i)
+    print(numofUsers)
